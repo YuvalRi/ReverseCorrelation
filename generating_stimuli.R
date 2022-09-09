@@ -7,7 +7,7 @@ library(viridisLite)
 library(viridis)
 library(rcicr)
 
-# Generating the stimuli (noised pictures) 
+# Generating the stimuli (noised images) 
 # Constants
 number_of_trials <- 100           # number of trials in the experiment
 base_image <- "input/mnes.jpg"    # base image path
