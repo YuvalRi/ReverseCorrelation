@@ -2,7 +2,7 @@
 library(viridisLite)
 library(rcicr)
 
-# Base image name used during stimulus generation
+# Base image name used during stimulus generationj
 baseimage <- 'base'
 
 # File containing the contrast parameters (this file was created during stimulus generation)
