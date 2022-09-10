@@ -24,5 +24,4 @@ anti_cis <- batchGenerateCI2IFC(responsedata, 'subject', 'stimulus', 'response',
 groupcis <- batchGenerateCI2IFC(responsedata, 'trait', 'stimulus', 'response', baseimage, rdata)
 
 # anti classification images (CIs) by trait
-
 anti_groupcis <- batchGenerateCI2IFC(responsedata, 'trait', 'stimulus', 'response', baseimage, rdata, antiCI = TRUE, label='anti')
