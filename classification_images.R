@@ -1,4 +1,4 @@
-# libraries 
+# libraries
 library(viridisLite)
 library(viridis)
 library(rcicr)
@@ -20,8 +20,8 @@ cis <- batchGenerateCI2IFC(responsedata, 'subject', 'stimulus', 'response', base
 # anti classification images (CIs) by subject
 anti_cis <- batchGenerateCI2IFC(responsedata, 'subject', 'stimulus', 'response', baseimage, rdata, antiCI = TRUE, label='anti')
 
-# Batch generate classification images by trait
-groupcis <- batchGenerateCI2IFC(responsedata, 'trait', 'stimulus', 'response', baseimage, rdata)
+# Group Analysis - Classification Image
+groupcis <- generateCI2IFC('stimulus', 'response', baseimage, rdata, scaling = "matched")
 
-# anti classification images (CIs) by trait
-anti_groupcis <- batchGenerateCI2IFC(responsedata, 'trait', 'stimulus', 'response', baseimage, rdata, antiCI = TRUE, label='anti')
+# Group Analysis - Anti Classification Image
+anti_groupcis <- generateCI2IFC('stimulus', 'response', baseimage, rdata, scaling = "matched", antiCI = TRUE, label='anti')
