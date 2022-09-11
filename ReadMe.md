@@ -8,7 +8,7 @@ The code enables a creation of noised images which are used for psychological an
 
 2. Call the libraries- 'virdisLite', 'virdis', 'rcicr'.
 
-3. In order to create the pictures with the noise on them, Two constants are avalible, these should be changed depending on tour experiment needs:
+3. In order to create the pictures with the noise on them, two constants are avaliable, these should be changed depending on your experiment needs:
     - Number of trials - number of trails to conduct.
     Remember that each trial outputs 2 pictures, so if the number of trials is set to 100, you will get 200 images in total.
     - Base image - the image you want to add noise on. This parameter should include the path of the image. image size should be exactly 512X512 pixels.
