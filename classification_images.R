@@ -15,13 +15,13 @@ rdata <- 'rcicrdemo.Rdata'
 responsedata <- read.csv('rcicrdemo.csv')
 
 # Batch generate classification images by subject
-cis <- batchGenerateCI2IFC(responsedata, 'subject', 'stimulus', 'response', baseimage, rdata)
+cis <- batchGenerateCI2IFC(responsedata, by = 'subject', stimuli = 'ID', responses = 'response', baseimage, rdata)
 
 # anti classification images (CIs) by subject
-anti_cis <- batchGenerateCI2IFC(responsedata, 'subject', 'stimulus', 'response', baseimage, rdata, antiCI = TRUE, label='anti')
+anti_cis <- batchGenerateCI2IFC(responsedata, by = 'subject', stimuli = 'ID', responses = 'response', baseimage, rdata, antiCI = TRUE, label='anti')
 
 # Group Analysis - Classification Image
-groupcis <- generateCI2IFC('stimulus', 'response', baseimage, rdata, scaling = "matched")
+groupcis <- generateCI2IFC(stimuli = 'ID', responses = 'response', baseimage, rdata, scaling = "matched")
 
 # Group Analysis - Anti Classification Image
-anti_groupcis <- generateCI2IFC('stimulus', 'response', baseimage, rdata, scaling = "matched", antiCI = TRUE, label='anti')
+anti_groupcis <- generateCI2IFC(stimuli = 'ID', responses = 'response', baseimage, rdata, scaling = "matched", antiCI = TRUE, label='anti')
