@@ -1,4 +1,7 @@
 # Reverse Correlation Project
+
+The reverse correlation technique is a data driven study method used primarily in psychological and neurophysiological research.
+
 ## Generating stimuli
 The code enables a creation of noised images which are used for psychological and neurophysiological research.
 
